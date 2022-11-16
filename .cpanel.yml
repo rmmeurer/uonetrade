@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/<user_name>/public_html #Add /<sub_folder> if required
-    - /bin/cp -r * $DEPLOYPATH
+    - export DEPLOYPATH=/home/user/public_html/
     - /bin/cp -R images $DEPLOYPATH
