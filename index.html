@@ -1,13 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UONE Bet</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <h1>Olá Mundo do VSCode!</h1>
-    <p>Teste VSCode.</p>
+    <nav class="navbar navbar-dark bg-success">
+        <!-- Navbar content -->
+    </nav>
+
+    <h1 class="text-center text-bg-dark p-2 mb-2 mt-0 container-fluid">UONE Bet</h1>
+    <main class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-9">
+                <div class="d-flex container justify-content-center my-3">
+                    <div class="d-flex col-4 justify-content-end">
+                        <h2 class="d-flex m-2">PAL</h2>
+                        <img class="d-flex m-2" src="/img/times/palmeiras-logo.png" alt="Palmeiras logo"
+                            style="height: 2.8rem; width: 2.8rem;">
+                    </div>
+                    <div class="d-flex col-auto justify-content-center">
+                        <h2 class="m-2">X</h2>
+                    </div>
+                    <div class="d-flex col-4 justify-content-start">
+                        <img class="d-flex m-2" src="/img/times/vasco-logo.png" alt="Vasco logo"
+                            style="height: 2.8rem; width: 2.8rem;">
+                        <h2 class="d-flex m-2">VAS</h2>
+                    </div>
+                </div>
+
+                <table class="table caption table-striped-columns table-hover table-sm table-bordered border-dark"
+                    style="--bs-border-opacity: .30;">
+                    <caption class="caption-top text-bg-dark p-2 mb-1 mt-0 text-center fw-bolder">Confrontos diretos
+                    </caption>
+                    <thead class="table-dark thead">
+                        <tr>
+                            <th scope="col">Data</th>
+                            <th scope="col">Casa</th>
+                            <th scope="col">Fora</th>
+                            <th scope="col">Campeonato</th>
+                            <th scope="col">Gols</th>
+                            <th scope="col">Escanteios</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-row">
+                        <tr>
+                            <td scope="row">05/09/2018</td>
+                            <td>Palmeiras</td>
+                            <td>Vasco</td>
+                            <td>Copa do Brasil</td>
+                            <td>2 - 0</td>
+                            <td>9 - 5</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">11/07/2018</td>
+                            <td>Vasco</td>
+                            <td>Palmeiras</td>
+                            <td>Copa do Brasil</td>
+                            <td>1 - 1</td>
+                            <td>8 - 6</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">10/09/2018</td>
+                            <td>Palmeiras</td>
+                            <td>Vasco</td>
+                            <td>Brasileiro A</td>
+                            <td>2 - 0</td>
+                            <td>7 - 4</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">23/07/2018</td>
+                            <td>Vasco</td>
+                            <td>Palmeiras</td>
+                            <td>Brasileiro A</td>
+                            <td>0 - 0</td>
+                            <td>5 - 7</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">13/04/2017</td>
+                            <td>Palmeiras</td>
+                            <td>Vasco</td>
+                            <td>Copa do Brasil</td>
+                            <td>2 - 2</td>
+                            <td>7 - 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Nav tab "Team Home | Team Out | Analytics"-->
+
+                
+
+                <div class="col mt-4">
+                    <nav class="">
+                        <div class="d-flex nav nav-tabs nav-fill justify-content-center " id="myTab" role="tablist">
+                            <button class="nav-link fw-bolder text-dark active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-team-home" type="button" role="tab" aria-controls="nav-home-tab"
+                                aria-selected="true">Palmeiras</button>
+
+                            <button class="nav-link fw-bolder text-dark" id="analytics-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-analytics" type="button" role="tab" aria-controls="nav-analytic"
+                                aria-selected="false">Analise Resumida</button>
+
+                            <button class="nav-link fw-bolder text-dark" id="team-out-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-team-out" type="button" role="tab" aria-controls="nav-team-out"
+                                aria-selected="false">Vasco</button>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <!-- Tab Team Home -->
+
+                        <div class="tab-pane show.bs.tab show active" id="nav-team-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <table
+                                class="table caption table-striped-columns table-hover table-sm table-bordered border-dark"
+                                style="--bs-border-opacity: .30;">
+                                <caption class="caption-top text-bg-dark p-2 mb-1 mt-0 text-center fw-bolder">Últimos
+                                    jogos do Palmeiras
+                                </caption>
+                                <thead class="table-dark thead">
+                                    <tr>
+                                        <th scope="col">Data</th>
+                                        <th scope="col">Casa</th>
+                                        <th scope="col">Fora</th>
+                                        <th scope="col">Campeonato</th>
+                                        <th scope="col">Gols</th>
+                                        <th scope="col">Escanteios</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-row">
+                                    <tr>
+                                        <td scope="row">07/03/2017</td>
+                                        <td>Palmeiras</td>
+                                        <td>Santos</td>
+                                        <td>Copa do Brasil</td>
+                                        <td>1 - 0</td>
+                                        <td>8 - 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">30/11/2016</td>
+                                        <td>Coritiba</td>
+                                        <td>Palmeiras</td>
+                                        <td>Brasileiro A</td>
+                                        <td>1 - 1</td>
+                                        <td>9 - 6</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">13/04/2016</td>
+                                        <td>Palmeiras</td>
+                                        <td>Internacional</td>
+                                        <td>Brasileiro A</td>
+                                        <td>2 - 2</td>
+                                        <td>7 - 6</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">07/03/2016</td>
+                                        <td>Palmeiras</td>
+                                        <td>Cuiabá</td>
+                                        <td>Copa do Brasil</td>
+                                        <td>1 - 0</td>
+                                        <td>8 - 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">30/11/2015</td>
+                                        <td>Flamengo</td>
+                                        <td>Palmeiras</td>
+                                        <td>Brasileiro A</td>
+                                        <td>1 - 1</td>
+                                        <td>9 - 6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Tab Team Out -->
+
+                        <div class="tab-pane show.bs.tab" id="nav-team-out" role="tabpanel"
+                            aria-labelledby="team-out-tab" tabindex="0">
+                            <table
+                                class="table caption table-striped-columns table-hover table-sm table-bordered border-dark"
+                                style="--bs-border-opacity: .30;">
+                                <caption class="caption-top text-bg-dark p-2 mb-1 mt-0 text-center fw-bolder">Últimos
+                                    jogos do Vasco
+                                </caption>
+
+                                <thead class="table-dark thead">
+                                    <tr>
+                                        <th scope="col">Data</th>
+                                        <th scope="col">Casa</th>
+                                        <th scope="col">Fora</th>
+                                        <th scope="col">Campeonato</th>
+                                        <th scope="col">Gols</th>
+                                        <th scope="col">Escanteios</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-row">
+                                    <tr>
+                                        <td scope="row">30/11/2016</td>
+                                        <td>Coritiba</td>
+                                        <td>Vasco</td>
+                                        <td>Brasileiro A</td>
+                                        <td>1 - 1</td>
+                                        <td>9 - 6</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">13/04/2016</td>
+                                        <td>Vasco</td>
+                                        <td>Internacional</td>
+                                        <td>Brasileiro A</td>
+                                        <td>2 - 2</td>
+                                        <td>7 - 6</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">07/03/2017</td>
+                                        <td>Vasco</td>
+                                        <td>Santos</td>
+                                        <td>Copa do Brasil</td>
+                                        <td>1 - 0</td>
+                                        <td>8 - 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">07/03/2016</td>
+                                        <td>Vasco</td>
+                                        <td>Cuiabá</td>
+                                        <td>Copa do Brasil</td>
+                                        <td>1 - 0</td>
+                                        <td>8 - 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">30/11/2015</td>
+                                        <td>Flamengo</td>
+                                        <td>Vasco</td>
+                                        <td>Brasileiro A</td>
+                                        <td>1 - 1</td>
+                                        <td>9 - 6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Tab Analytics -->
+                        <div class="tab-pane show.bs.tab" id="nav-analytics" role="tabpanel"
+                            aria-labelledby="analytics-tab" tabindex="0">
+                            <p class="text-center text-bg-dark p-2 mb-2 mt-0 container-fluid fw-bolder">Analise do
+                                confronto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container do card lateral-->
+
+            <div class="card p-0" style="max-width: 16rem; max-height: 25rem;">
+                <img src="/img/banner_tornesse_premiun.jpg" class="card-img-top" alt="banner-oune-bet-premium">
+                <div class="card-body">
+                    <h5 class="card-title">Seja UONE Bet Premium</h5>
+                    <p class="card-text">Estatísticas de gols, escanteios, cartões, lista de jogos, gráfico de precisão,
+                        etc.</p>
+                    <a href="#" class="btn btn-success stretched-link">Seja Premium</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
+
 </html>
