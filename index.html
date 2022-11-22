@@ -11,99 +11,248 @@
 
 </head>
 
-<body>
-    <nav class="navbar navbar-dark bg-success">
-        <!-- Navbar content -->
-    </nav>
+<body class="bg-light">
 
-    <!-- Title Page -->
-    <div id="">
-        <h1 class="text-center text-bg-dark p-2 mb-2 mt-0 container-fluid">UONE Trade</h1>
-    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">UONE TRADE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <main class="container overflow-hidden">
-        <div class="row mx-auto">
-
-            <!-- Search Team -->
-            <div class="col-sm-6 col-md-9 text-center">
-                <div>
-
-                </div>
-
-                <h4 class="col-auto mt-4" id="titlePage">Pesquise pelo time que você quer analisar</h4>
-                    <div class="col-6 mt-4 mx-auto">
-                        <input class="form-control" type="search" name="searchTeam" id="searchTeam"
-                            placeholder="Digite o nome do time">
-                    </div>
-                    <div class="btn btn-success mt-4" onclick="searchResult()" id="btnSearch">Buscar time</div>
-                    <br>
-                    <div class="col-4 mt-4 mx-auto" id="menu">
-                    </div>
-
-                    <!-- Search Team -->
-                    <div class="" id="tableAnalytics" style="display: none;">
-                        <table class="table table-light table-striped">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mark</td>
-                                    <td>X</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <td>Jacob</td>
-                                    <td>X</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <td>Jacob</td>
-                                    <td>X</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <td>Jacob</td>
-                                    <td>X</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <td>Jacob</td>
-                                    <td>X</td>
-                                    <td>@fat</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-            </div>
-
-            <!-- Container do card lateral-->
-            <!-- É necessário deixar o card lateral em uma posição fixa na pagina desketop quando tiver um conteudo grande dos resultados -->
-            <div class="col-md-3">
-                <div class="card p-0" style="max-width: 16rem; max-height: 25rem;">
-                    <img src="/img/banner_side_premium.jpg" class="card-img-top" alt="banner-oune-bet-premium">
-                    <div class="card-body">
-                        <h5 class="card-title">Seja UONE Bet Premium</h5>
-                        <p class="card-text">Estatísticas de gols, escanteios, cartões, lista de jogos, gráfico de
-                            precisão,
-                            etc.</p>
-                        <a href="#" class="btn btn-success stretched-link">Seja Premium</a>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/planos.html">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+                </form>
             </div>
         </div>
-    </main>
+    </nav>
 
+    <div class="container-fluid bg-light">
+        <div class="row row-cols row-cols-md-12 d-flex flex-row justify-content-center gy-5 my-3">
+
+            <!--Box Left-->
+            <div class="col col-md-2 shadow-sm rounded-3">
+                <div class="card text-bg-dark p-0 vh-100">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item bg-dark text-light list-group-item-action">Brasileirão A</a>
+                        <a href="#" class="list-group-item bg-dark text-light list-group-item-action">Brasileirão B</a>
+                        <a href="#" class="list-group-item bg-dark text-light list-group-item-action">Copa do Brasil</a>
+                        <a href="#" class="list-group-item bg-dark text-light list-group-item-action">Libertadores</a>
+                        <a href="#" class="list-group-item bg-dark text-light list-group-item-action">Liga dos
+                            Campeoões</a>
+                        <a href="#" class="list-group-item bg-dark text-light list-group-item-action">Outros
+                            Campeonatos</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Box Center-->
+            <div class="col col-md-7 bg-white rounded-3 shadow-sm p-0">
+
+                <!--Banner-->
+                <div class="bg-image rounded-top d-flex align-items-center"
+                    style="background-image: url('/img/banner-home-uone-trade.jpg'); height: 15rem; width: 100%; background-position: 50% 80%; background-size: 130%; ">
+
+                    <div class="p-2 ps-5">
+                        <h3 class="text-warning">Analises de futebol</h3>
+                        <p class="col-8 text-white">Faça suas analises de futebol de forma fáil, rápida e eficaz.</p>
+                        <button href="#!" class="btn btn-outline-light text-warning">Cadastrar</button>
+                    </div>
+                </div>
+
+                <!--Search box-->
+                <div class="container d-flex justify-content-center" style="height: 30%;">
+                    <div class="col-12 align-self-center">
+                        <h4 class="text-success text-center" id="titlePage" name="titlePage">Pesquise pelo time que você
+                            quer analisar</h4>
+
+                        <div class="col-8 input-group mt-3 mx-auto" style="width: 70%;">
+                            <input class="form-control" type="search" name="searchTeam" id="searchTeam"
+                                placeholder="Digite o nome do time">
+                            <span class="input-group-text btn text-bg-success" onclick="searchResult()"
+                                id="btnSearch">Buscar analise</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Destaques-->
+                <div class="container py-4" style="width: 100%;">
+                    <div class="d-flex justify-content-center">
+                        <h5 class="col-10 text-success text-center mb-4 mt-2">Jogos em destaque</h5>
+                    </div>
+                    <div class="row mx-2 align-items-center">
+
+                        <div class="col-12 d-flex">
+                            <div class="container col-3">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="d-flex align-baseline">
+                                        <div class="">
+                                            <h5 class="p-1 d-flex align-self-center text-center">PAL</h5>
+                                        </div>
+                                        <div class="p-1">
+                                            <img class="" src="/img/times/palmeiras-logo.png" alt="Palmeiras logo"
+                                                style="height: 1.9rem; width: 1.9rem;">
+                                        </div>
+                                    </div>
+                                    <div class="col-1 justify-content-center d-flex text-center">
+                                        <h5 class="d-flex align-self-center">X</h5>
+                                    </div>
+                                    <div class="d-flex align-baseline">
+                                        <div class="p-1">
+                                            <img class="" src="/img/times/vasco-logo.png" alt="Vasco logo"
+                                                style="height: 1.9rem; width: 1.9rem;">
+                                        </div>
+                                        <div class="">
+                                            <h5 class="p-1 d-flex align-self-center text-center">VAS</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="text-center">Qui - 19h00</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex" style="height: 60px;">
+                                <div class="vr"></div>
+                            </div>
+
+                            <div class="container col-3">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="d-flex align-baseline">
+                                        <div class="">
+                                            <h5 class="p-1 d-flex align-self-center text-center">BRA</h5>
+                                        </div>
+                                        <div class="p-1">
+                                            <img class="" src="/img/logo-selecao-brasileira.png" alt="Palmeiras logo"
+                                                style="height: 1.9rem; width: 1.9rem;">
+                                        </div>
+                                    </div>
+                                    <div class="col-1 justify-content-center d-flex text-center">
+                                        <h5 class="d-flex align-self-center text-center">X</h5>
+                                    </div>
+                                    <div class="d-flex align-baseline">
+                                        <div class="p-1">
+                                            <img class="" src="/img/logo-selecao-servia.png" alt="Vasco logo"
+                                                style="height: 1.9rem; width: 1.9rem;">
+                                        </div>
+                                        <div class="">
+                                            <h5 class="p-1 d-flex align-self-center text-center">SER</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="text-center">Qui - 16h00</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex" style="height: 60px;">
+                                <div class="vr"></div>
+                            </div>
+
+                            <div class="container col-3">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="d-flex align-baseline">
+                                        <div class="">
+                                            <h5 class="p-1 d-flex align-self-center text-center">PAL</h5>
+                                        </div>
+                                        <div class="p-1">
+                                            <img class="" src="/img/times/palmeiras-logo.png" alt="Palmeiras logo"
+                                                style="height: 1.9rem; width: 1.9rem;">
+                                        </div>
+                                    </div>
+                                    <div class="col-1 justify-content-center d-flex text-center">
+                                        <h5 class="d-flex align-self-center text-center">X</h5>
+                                    </div>
+                                    <div class="d-flex align-baseline">
+                                        <div class="p-1">
+                                            <img class="" src="/img/times/vasco-logo.png" alt="Vasco logo"
+                                                style="height: 1.9rem; width: 1.9rem;">
+                                        </div>
+                                        <div class="">
+                                            <h5 class="p-1 d-flex align-self-center text-center">VAS</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <p class="text-center">Qui - 19h00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Box Left-->
+            <div class="col col-md-3 shadow-sm rounded-3">
+                <div class="bg-image rounded-top"
+                    style="background-image: url('/img/seja-premium.webp'); height: 11rem; background-position: 0% 100%; background-size: 100%;">
+                </div>
+
+                <div class=" p-2 pt-3 border pb-3 bg-white">
+                    <h5 class="mb-3 text-success">Se torne membro UONE Trade!</h5>
+                    <label for="basic-url" class="form-label">Informações pessoais</label>
+                    <div class="row">
+                        <div class="col input-group input-group-sm mb-3">
+                            <input type="text" class="form-control" placeholder="Nome" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="col input-group input-group-sm mb-3">
+                            <input type="text" class="form-control" placeholder="Sobrenome"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Usuário" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="number" class="form-control" placeholder="Telefone" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <button class="btn btn-sm btn-success col-4" type="button">Cadastrar</button>
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-lg-start fixed-bottom">
+
+        <!-- Copyright -->
+        <div class="text-center p-1 text-bg-success">
+            © 2022 Copyright:
+            <a class="text-white" href="https://uone.tech">uone.tech</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
